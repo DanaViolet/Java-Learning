@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;search&apos; in &apos;Main.start(...)&apos; to &apos;add&apos;&#x0D;&#x0A;- Original project: &apos;Database&apos;&#x0D;&#x0A;- Original element: &apos;Main.start(Stage).search&apos;&#x0D;&#x0A;- Renamed element: &apos;search&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;search&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;{Main.java[Main~start~QStage;@search!951!987!958!963!QButton;!0!false" name="add" references="true" stamp="1501120611346" version="1.0"/>
+</session>

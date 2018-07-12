@@ -1,0 +1,31 @@
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.control.*;
+import javafx.stage.Stage;
+import javafx.*;
+
+public class Main extends Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Application.launch(args);
+	}
+
+		@Override
+		public void start(Stage stage){
+			Button button = new Button("There are many like it, but this one is mine.");
+			button.setOnAction((ActionEvent e ) -> {
+				System.out.println("Do as I say, not as I do.");
+				System.exit(0);
+			});
+			button.setLayoutX(50);
+			Pane pane = new Pane(button);
+			Scene scene = new Scene(pane, 600, 200);
+			stage.setScene(scene);
+			stage.show();
+			stage.setTitle("This is my window.");
+			//System.out.println("Hello World");
+		}
+}

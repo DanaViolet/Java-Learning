@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/old java/src/Ch2_First_Assignment/Ch2_First_Assignment.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Ch2_First_Assignment.Ch2_First_Assignment"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="old java"/>
+</launchConfiguration>

@@ -1,0 +1,17 @@
+
+public class Person {
+	String FirstName;
+	String LastName;
+	String ID;
+	
+	public Person(){
+		
+	}
+	
+	public Person(String FN, String LN, String _ID){
+		FirstName = FN;
+		LastName = LN;
+		ID = _ID;
+	}
+
+}

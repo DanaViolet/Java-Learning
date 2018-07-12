@@ -1,0 +1,46 @@
+package Ch11;
+//import java.util.Scanner;
+public class Main {
+
+	static final int N = 10;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//Scanner input = new Scanner(System.in);
+
+		Student[] ary = new Student[N];
+		ary[0] = new Student("Garfield", "Eat", 10);
+		ary[1] = new Student("Garfield", "Eat", 10);
+		ary[2] = new Student("Garfield", "Eat", 10);
+		ary[3] = new Student("Garfield", "Eat", 10);
+		ary[4] = new Student("Garfield", "Eat", 10);
+		ary[5] = new Student("Garfield", "Eat", 10);
+		ary[6] = new Student("Garfield", "Eat", 10);
+		ary[7] = new Student("Garfield", "Eat", 10);
+		ary[8] = new Student("Garfield", "Eat", 10);
+		ary[9] = new Student("Garfield", "Eat", 10);
+
+		int nbr = 10;
+		Student c1 = ary[0];
+
+		for (int i=0; i<N; i++){
+
+			if (ary[i].Id == nbr){
+				c1 = ary[i];
+				break;
+			}
+		}
+
+		/*
+		System.out.print("Enter the cartoon ID");
+		int search = input.nextInt();
+		int index = ary[].Search(search);
+		System.out.println("index = " + index);
+		*/
+
+
+		c1.Puts();
+
+	}
+
+}

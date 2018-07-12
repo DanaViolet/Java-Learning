@@ -1,0 +1,63 @@
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.geometry.Pos;
+import javafx.scene.Scene;
+import javafx.scene.layout.Pane;
+import javafx.scene.text.Font;
+import javafx.scene.control.*;
+import javafx.stage.Stage;
+import java.util.*;
+import javafx.*;
+
+public class Main extends Application {
+
+	public static void main(String[] args) {
+		List = new ArrayList<Person>(10);
+		Application.launch(args);
+	}
+	public static ArrayList<Person> List;
+	//public static Person[] List;
+
+		//@Override
+		public void start(Stage stage){
+			
+			//Text fields go here
+			TextField tbFN = new TextField("First Name");
+			tbFN.setLayoutX(0);
+			tbFN.setLayoutY(0);
+			//tbFN.setAlignment(Pos.BASELINE_RIGHT);
+			TextField tbLN = new TextField("Last Name");
+			tbLN.setLayoutX(0);
+			tbLN.setLayoutY(30);
+			
+			TextField tbID = new TextField("ID");
+			tbLN.setLayoutX(0);
+			tbLN.setLayoutY(60);
+			
+			
+			//Buttons go here
+			Button search = new Button("Search");
+			search.setLayoutX(115);
+			search.setLayoutY(90);
+			search.setOnAction((ActionEvent e ) -> {
+				//call search function
+			});
+			
+			Button store = new Button("Store");
+			store.setLayoutX(0);
+			store.setLayoutY(90);
+			store.setOnAction((ActionEvent e ) -> {
+				List.add(new Person(tbFN.getText(), tbLN.getText(), tbID.getText()));
+				System.out.println(List.get(0).FirstName + " " + List.get(0).LastName);
+			});
+			
+			Pane pane = new Pane();
+			pane.getChildren().addAll(search, store, tbFN, tbLN, tbID);
+			Scene scene = new Scene(pane, 175, 100);
+			stage.setResizable(false);
+			stage.setScene(scene);
+			stage.show();
+			stage.setTitle("DBMS");
+			//System.out.println("Hello World");
+		}
+}

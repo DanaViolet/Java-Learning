@@ -1,0 +1,14 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		TCKR st1 = new TCKR("CYBR", 150,  47.50, 48);
+		System.out.printf("Profit = $%4.2f" + "\n" , st1.profit);
+		
+		st1.pNext = new TCKR("DIS", 100,  111, 128);
+		System.out.printf("Profit = $%4.2f" , st1.pNext.profit);
+	}
+
+}

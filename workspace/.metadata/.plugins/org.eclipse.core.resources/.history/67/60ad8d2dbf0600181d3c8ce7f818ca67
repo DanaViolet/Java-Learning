@@ -1,0 +1,24 @@
+
+public class Line extends Calc{
+	public Point pt1;
+	public Point pt2;
+	
+	public double side1;
+	
+	public Line(){
+		
+	}
+	
+	public Line(Point _pt1, Point _pt2){
+		pt1 = _pt1;
+		pt2 = _pt2;
+		
+		side1 = EuDist(pt1, pt2);
+		
+	}
+	
+	public void Display(){
+		System.out.println("Line:");
+		System.out.println("Side1 = " + side1);
+	}
+}

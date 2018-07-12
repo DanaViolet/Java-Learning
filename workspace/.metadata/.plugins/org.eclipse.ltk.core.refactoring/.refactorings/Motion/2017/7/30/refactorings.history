@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;circle&apos; in &apos;Main.start(...)&apos; to &apos;c1&apos;&#x0D;&#x0A;- Original project: &apos;Motion&apos;&#x0D;&#x0A;- Original element: &apos;Main.start(Stage).circle&apos;&#x0D;&#x0A;- Renamed element: &apos;circle&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;circle&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/&lt;{Main.java[Main~start~QStage;@circle!2152!2191!2159!2164!QCircle;!0!false" name="c1" references="true" stamp="1501118536040" version="1.0"/>
+</session>

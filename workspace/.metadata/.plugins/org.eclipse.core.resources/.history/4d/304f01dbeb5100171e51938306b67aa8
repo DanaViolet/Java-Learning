@@ -1,0 +1,17 @@
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
+import javafx.stage.Stage;
+
+public class Main extends Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Application.launch(args);
+	}
+
+		@Override
+		public void start(Stage stage){
+			System.out.println("Hello World");
+		}
+}

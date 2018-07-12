@@ -1,0 +1,26 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Person p1   =  new Person("Garfield", "Cat", 1000);
+		Person p2   =  new Person("Odie", "Dog", 1001);
+		Person[] ary =  new Person[5];ary[0] =  p1;ary[1] =  p2;
+		
+		ProcessPerson pPerson =  new ProcessPerson();
+		
+		int index =  pPerson.SearchById(ary, 1001);
+		pPerson.Display(ary[index]);
+		index =  pPerson.SearchByLastName(ary, "Cat");
+		if (index !=   -1)
+		{pPerson.Display(ary[index]);}
+		/* 
+		using inheritance
+		pPerson.LN =  "America";
+		pPerson.FN =  "Capt.";
+		pPerson.Id =  1002;
+		pPerson.Display();
+		*/
+
+	}
+
+}

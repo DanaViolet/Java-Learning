@@ -1,0 +1,47 @@
+import javafx.application.Application;
+//import javafx.event.ActionEvent;
+import javafx.scene.Scene;
+import javafx.scene.Scene.*;
+import javafx.scene.layout.Pane;
+import javafx.scene.shape.Circle;
+import javafx.scene.shape.Line;
+//import javafx.scene.control.*;
+//import javafx.scene.control.Alert.AlertType;
+import javafx.stage.Stage;
+import java.util.*;
+
+public class Main extends Application {
+
+	public static void main(String[] args) {
+		Application.launch(args);
+	}
+	
+		public void start(Stage stage){
+			/*
+			//Text fields go here
+			TextField tbFN = new TextField("Name");
+			tbFN.setLayoutX(0);
+			tbFN.setLayoutY(0);
+			
+			
+			//Buttons go here
+			Button search = new Button("OK");
+			search.setLayoutX(100);
+			search.setLayoutY(90);
+			search.setOnAction((ActionEvent e ) -> {});
+
+			*/
+			Line line = new Line(10,10,50,50);
+			Circle circle = new Circle (60, 20, 20, null);
+			
+			Pane pane = new Pane();
+			pane.getChildren().addAll(line);
+			
+			Scene scene = new Scene(pane, 175, 120);
+			
+			stage.setResizable(false);
+			stage.setScene(scene);
+			stage.show();
+			stage.setTitle("Geo");
+		}
+}

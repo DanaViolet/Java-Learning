@@ -1,0 +1,30 @@
+package ClassDemo;
+
+public class ProcessPerson extends Person {
+	public ProcessPerson(){}
+	
+	public int SearchById(Person[] ary, int Id){
+		for (int i  =  0;   i  <  ary.length; i++)
+		{if   (Id == ary[i].Id)
+		{return i;}
+		}return -1;}
+	
+	public int SearchByLastName(Person[] ary, String LN){
+		LN =  LN.toUpperCase();
+		for (int i  =  0;   i  <  ary.length; i++)
+		{if   (ary[i] !=   null)
+		{String tmp =  ary[i].LN.toUpperCase();
+		if (LN.contains(tmp) == true)
+		{return i;}}}return -1;
+		}
+	
+	public void Display(){
+		String buffer = Id   +  "  " +  FN +  " " +  LN;
+		System.out.println(buffer);
+		}
+	
+	public void Display(Person p){
+		String buffer = p.Id +  " "  +  p.FN + "  " + p.LN;
+		System.out.println(buffer);
+		}
+}
